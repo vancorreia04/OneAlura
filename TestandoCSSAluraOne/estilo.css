@@ -1,0 +1,108 @@
+/*Importando e aplicando a fonte correta 
+Adicione o @import url da fonte Montserrat com peso 600 no início do arquivo style.css
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+/*resertar CSS*/
+*{margin: 0;
+    padding: 0;}
+
+    body {
+        
+        /* Ajustando a altura da tela com CSS  */
+        
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+        /* Controlando o Overflow com Box Sizing*/
+        box-sizing: border-box;
+        background-color: brow;
+    }
+    /* Flexbox: alinhando textos e imagens  */
+    main{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+
+.titulo-blog{
+    color: #007BFF;  
+}
+p{margin: 10px;
+    border: 2px solid black;
+    padding: 5px;
+
+}
+
+/* Escolha uma cor vibrante */
+.paragrafo destaquacado{
+    color: #FF5733; 
+}
+.paragrafo-de-outra-cor{
+    color: red;    
+}
+
+.responsivo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  /*Espaçamento e tamanho dos botões
+ efina um tamanho consistente para os botões utilizando propriedades como padding e font-size.
+Para o espaçamento, use a propriedade margin para adicionar espaço entre os botões.
+  */
+  .apresentacao__links a {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+}
+/*  Melhorando a visibilidade dos botões
+Aumente a fonte usando font-size para melhorar a legibilidade.
+Altere a cor de fundo e a cor da fonte para contrastar melhor.
+*/ 
+.apresentacao__links a {
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+/* Criando uma classe comum para botões
+ crie a classe .apresentacao__links__link
+ e adicione as propriedades de estilo como background-color, width, text-align, border-radius e font-size
+*/
+.apresentacao__links__link {
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+}
+/*Ajustando o espaçamento interno dos botões 
+ajuste o padding para 21.5px na parte superior e inferior, mantendo 0 nas laterais.*/
+.apresentacao__links__link {
+    padding: 21.5px 0;
+}
+/*Aplique a fonte Montserrat e o peso de fonte apropriado na classe .apresentacao__links__link, além de ajustar a cor do texto e remover a decoração do texto */
+.apresentacao__links__link {
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+}
+/*Ajustando o espaçamento interno dos botões
+ dentro da classe .apresentacao__links__link, ajuste o padding para 21.5px na parte superior e inferior, mantendo 0 nas laterais.*/
+ .apresentacao__links__link {
+    padding: 21.5px 0;
+}
+/* Aplique a fonte Montserrat e o peso de fonte apropriado na classe .apresentacao__links__link, além de ajustar a cor do texto e remover a decoração do texto.*/
+.apresentacao__links__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
