@@ -1,0 +1,38 @@
+Body{
+    background-color: beige;
+}
+
+/*Ajuste o padding da classe .cabecalho para espaçar corretamente o conteúdo*/
+
+.cabecalho {
+
+    padding: 2% 0% 0% 15%;
+}
+/*Implemente o FlexBox na classe .cabecalho__menu e defina um gap*/
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+/*Estilizando o cabeçalho com CSS
+Para estilizar a classe*/
+
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
+}
+/*Ajustando o espaçamento do conteúdo 
+Modifique o padding da classe .apresentacao para alinhar melhor o conteúdo com o cabeçalho*/
+.apresentacao {
+    padding: 5% 15%;
+}
+
+
+.apresentacao__conteudo__texto a{
+    text-decoration: none;
+    color: #22D4FD;
+}
