@@ -1,0 +1,166 @@
+/*resert css*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Removendo o height para adaptar o layout
+Comente a linha que contém height: 100vh usando /* height: 100vh; */ */
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+/*Estilizando o cabeçalho com CSS */
+
+/*Ajuste as propriedades display, justify-content e align-items na classe cabecalho__menu para alinhar os links horizontalmente */
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Estilizando o cabeçalho com CSS */
+
+.cabecalho__menu__link {
+    padding: 10px 15px;
+    font-size: 18px;
+    
+    color: #333;
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: #007bff;
+}
+
+/* estilizado o elemento pai */
+
+.container {
+    margin: 20%;    /* adiciona uma margem para centralizar os quadrados na tela*/
+    display: flex;    /* coloca os quadrados lado a lado */
+    gap: 10px;    /* adiciona espaços iguais entre cada quadrado */
+    }
+    /* deseja alinhar esses quadrados verticalmente, um embaixo do outro, porém mesmo adicionando o display: flex ainda não obteve esse resultado.
+    Podemos adicionar a propriedade flex-direction: column ao CSS da classe .container.
+    Ao adicionarmos a propriedade flex-direction: column os quadrados irão se posicionar verticalmente, já que define que a direção do display: flex deve ser em “coluna”.
+    */
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    /*Ajustando o espaçamento interno da apresentação 
+   Substitua a propriedade margin por padding.
+Inicialmente, defina padding: 5% 15%.
+Ajuste o valor do padding para encontrar o equilíbrio visual ideal, por exemplo, 8% */
+apresentacao {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*Alterando a disposição dos elementos com Flexbox 
+Adicione a propriedade flex-direction: column; para mudar a disposição dos elementos para vertical*/
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Ajustando o alinhamento e o espaçamento dos elementos
+entro da classe .apresentacao__links:
+Adicione align-items: center; para centralizar os elementos verticalmente.
+Insira gap: 32px; para criar um espaçamento de 32px entre cada elemento
+*/
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+/* Estilizando o subtítulo
+Adicione a classe .apresentacao__links__subtitulo no início do arquivo.
+Configure as propriedades da classe da seguinte forma
+*/
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+/* Modificando o estilo dos botões
+.apresentacao__links__link.
+Faça as seguintes modificações na classe
+*/
+
+.apresentacao__links__link {
+    /* background-color: #22D4FD; */ /* Código comentado */
+    border: 2px solid #22D4FD;
+    color: #F6F6F6;
+    width: 378px;
+    border-radius: 8px;
+    /* Outras propriedades existentes permanecem inalteradas */
+}
+/*você deve fazer alguma personalização através do uso do hover. Aqui vale explorar cores, tamanhos, imagens e perceber como cada elemento age com o hover */
+.quadrado:hover{
+    background-color: yellow;
+        /* insira aqui sua personalização */
+    
+}
+
+/*Centralizando ícones e textos nos botões
+ na classe .apresentacao__links__link.
+Adicione a propriedade display: flex entre background-color e border.
+Em seguida, adicione justify-content: center entre display: flex e border
+*/
+
+.apresentacao__links__link {
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    border: 2px solid #22D4FD;
+     /* outras propriedades */
+}
+/*Espaçamento entre ícones e textos
+ na classe .apresentacao__links__link.
+Adicione a propriedade gap com o valor identificado no Figma, posicionando-a após justify-content*/
+.apresentacao__links{
+   /* background-color: #22D4FD; */
+   display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+/* valor do espaçamento identificado no Figma */
+/* outras propriedades */
+
+/* Personalizando o efeito Hover*/
+.apresentacao__links__link:hover {
+    border: 2px solid #0000FF;
+}
+
+/*Alterando o cursor e o fundo dos botões */
+.apresentacao__links__link:hover {
+    cursor: pointer;
+    background-color: #272727;
+}
+/* na classe .rodape.
+Atualize a propriedade background-color para #22D4FD.
+Defina a propriedade color para #000000.
+Centralize o texto adicionando text-align: center.
+Aplique a fonte 'Montserrat', com tamanho 24px e peso 400 usando font-family: 'Montserrat', sans-serif; e font-size: 24px; e font-weight: 400.
+Adicione padding: 24px para criar um espaçamento interno. */
+
+.rodape {
+    padding: 24px;
+    color: #000000;
+    background-color: #22D4FD;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+/* */
